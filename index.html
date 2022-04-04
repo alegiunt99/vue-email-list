@@ -27,7 +27,7 @@
 <body>
     <div id="app">
         <!-- creo un ciclo per stampare tutte le email -->
-        <div class="email" v-for="email in emailList">
+        <div class="email" v-for="email in emailList" v-if="emailList.length === 10">
             <p>{{email}}</p>
         </div>
     </div>

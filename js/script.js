@@ -25,6 +25,8 @@ const app = new Vue({
 
     mounted() {
 
+        const that = this;
+
         //creo un ciclo per generare 10 email
         for (let i = 0; i < 10; i++){
 
@@ -38,13 +40,18 @@ const app = new Vue({
                 this.emailGen = email.success ? email.response : '';
                 console.log(this.emailGen)
 
-                //ogni email generata l'aggiungo all'array vuoto
-                this.emailList.push(this.emailGen);
+               //ogni email generata l'aggiungo all'array vuoto
+                that.emailList.push(that.emailGen); 
                 
             })
         
+            
         }
 
+        
+
+        
+                
         
         
     }
