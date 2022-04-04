@@ -25,7 +25,12 @@
 </head>
 
 <body>
-
+    <div id="app">
+        <!-- creo un ciclo per stampare tutte le email -->
+        <div class="email" v-for="email in emailList">
+            <p>{{email}}</p>
+        </div>
+    </div>
 </body>
 
 </html>
